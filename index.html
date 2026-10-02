@@ -94,7 +94,6 @@
         button:hover {
             background-color: #ff6b81;
         }
-        /* Стил на готовата картичка */
         .card-preview-area {
             margin-top: 30px;
             text-align: center;
@@ -158,7 +157,6 @@
 <body>
 
 <div class="app-container">
-    <!-- Секция за създаване -->
     <div id="creator-view">
         <h1>Създай Картичка 🎂</h1>
         <div class="form-group">
@@ -168,22 +166,21 @@
         
         <label>Избери картинка:</label>
         <div class="image-picker" id="imagePicker">
-            <!-- Вградени сигурни линкове към постоянни изображения в интернет -->
+            <!-- Сега зареждаме директно от вашия GitHub хостинг -->
             <div class="image-option selected" data-img-idx="0">
-                <img src="https://picsum.photos" alt="Балони">
+                <img src="baloni.jpg" alt="Балони">
             </div>
             <div class="image-option" data-img-idx="1">
-                <img src="https://picsum.photos" alt="Торта">
+                <img src="torta.jpg" alt="Торта">
             </div>
             <div class="image-option" data-img-idx="2">
-                <img src="https://picsum.photos" alt="Подарък">
+                <img src="podarak.jpg" alt="Подарък">
             </div>
         </div>
 
         <button id="generateBtn">Генерирай Картичка</button>
     </div>
 
-    <!-- Секция за преглед и споделяне -->
     <div id="preview-view" class="card-preview-area">
         <div class="birthday-card">
             <img id="cardImage" src="" alt="Рожден Ден">
@@ -199,11 +196,11 @@
 </div>
 
 <script>
-    // Постоянни онлайн ресурси за изображения (работа с интернет)
+    // Пътища към вашите собствени GitHub картинки
     const images = [
-        "https://picsum.photos",
-        "https://picsum.photos",
-        "https://picsum.photos"
+        "baloni.jpg",
+        "torta.jpg",
+        "podarak.jpg"
     ];
 
     let selectedImgIdx = 0;
